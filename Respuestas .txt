@@ -1,0 +1,13 @@
+---Rendimiento
+  El código es liviano, utilizando funciones las cuales, al tener un enfoque modular frente a las funcionalidades y propiedades, se trata de un código liviano y con rendimiento alto. No obstante, al generar nuevos elementos por ejemplo en la función "actualizar_proyectos", sin eliminar los datos previos, puede generar copias innecesarias de datos los cuales podrían acumularse y disminuir el rendimiento del programas. Del mismo modo, al realizar la actualización de proyectos se realiza una copia de todos los proyectos no utizados, de modo que si se tiene un número muy alto de proyectos (>1000) y se busca actualizar un único valor de un proyecto, ese sistema es poco eficiente.
+
+------ Escalabilidad
+En el enfoque funcional los datos obtenidos, creados o modificados, suelen mantenerse almacenados a pesar de su desuso, además, al actualizar datos se generan copias de datos los cuales ocupan un espacio en la memoria a pesar de no utilizarse ambos valores. En este sentido, escalar un proyecto hecho con paradigma funcional puede no ser práctico ni costo efectivo a la hora de una aplicación real en la cual se requiera el tratamiento y manejo de miles de datos a diario.
+
+------ Manentibilidad
+El código es muy compacto, además de encontrarse dividido en forma modular, de modo que los posibles errores que se dan son localizados, así, el código es muy facil de mantener, puesto que para modificar la acción de una función o generar nuevas solo es necesario generar funciones nuevas las cuales sean correspondientes con lo que se busca, haciendo el mantenimiento muy simple.
+
+-----Retos en la implementación del paradigma
+El hecho de no poder modificar objetos definidos anteriormente crea la necesidad de generar copias cada vez que se trabaja con alguno de los datos, generando copias las cuales podrían no utilizarse, más ocuparían espacio en la memoria, además de generar complicaciones a la hora de generar funciones para editar múltiples datos o filtrar datos. 
+De igual forma, al poseer funciones acopladas o anidadas se generarían complicaciones, puesto que es mas complejo hacer cambios y declaraciones frente a estas estructuras sin realizar cambios a las funciones declaradas anteriormente.
+Finalmente, al generar múltiples copias y debido a la estructura de actualización de datos, el rendimiento podría verse comprometido al manejar una cantidad grande de datos.
