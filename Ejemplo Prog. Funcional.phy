@@ -1,6 +1,0 @@
-//Vamos a crear un proyecto de un laboratorio químico, donde documentaremos los productos y proyectos del mismo
-Productos =
-
-def nuevo_proyecto(Nombre, area de estudio, presupuesto, Activo):
-  
-def existe_proyecto(Nombre,
