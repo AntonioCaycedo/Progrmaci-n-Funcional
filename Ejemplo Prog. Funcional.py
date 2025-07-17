@@ -33,6 +33,7 @@ proyectos_actuales = [
 
 
 #observamos los datos obtenidos, dicha funcion, aunque genera una salida, se considera funcional pues es la única forma de mostrar un resultado
+print("\n ----Proyectos----")
 for p in proyectos_actuales:
   print(ver_proyecto(p))
 
@@ -42,6 +43,7 @@ proyectos_actualizados = [
     ]
 
 #Finalmente, imprimimos los datos obtenidos para los proyectos actualizados
+print("\n ----Proyectos actualizados----")
 for p in proyectos_actualizados:
   print(ver_proyecto(p))
 
